@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+    *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+ 
+    }
+    
+    body{
+    background-color: rgb(255, 255, 44);
+    padding: 20px 20px 20px 20px;
+    width: 100%;
+    margin: auto;
+  
+    }
+    
+    
+    main {
+    display:flex ;
+    margin: auto;
+    padding: 0px;
+    background-color:white;
+    border-radius: 10px;
+    color: rgb(130, 127, 127);
+    
+    max-width: 700px;
+   
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.384);
+    
+    }
+    picture img { 
+    width: 100%;
+    }
+    main picture img { 
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        height: 100%; 
+             
+    }
+    div.texto {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 20px;
+        width: 100%; 
+       
+    }
+   
+    div.texto  #preço{ 
+        color: green;
+        }
+        main #desconto{
+            color: rgb(98, 96, 96)
+        }
+    
+        div.texto h1{
+            color: black;
+        }
+
+   
+    div.texto button{
+        color: green;
+        background-color: white;
+        border: 0;
+        border-radius: 5px;
+        width: 200px;
+        padding: 10px;
+        position: relative;
+        margin: auto;
+        animation: pulse 5s ease infinite;
+        transition: all .9s ;
+        cursor: pointer;
+    }
+
+    @media (max-width: 506px) {
+        main {
+            display:block ;
+            margin: auto;
+            
+        }
+    }
+
+    @keyframes pulse {
+
+       0% { 
+          
+           box-shadow: 0px 0px 5px whitesmoke;
+         }
+         
+         50% {
+            
+            box-shadow: 0px 0px 10px greenyellow;
+         }
+         100% {
+           
+            box-shadow: 0px 0px 15px green;
+         }
+     }
+
+   /* @keyframes pulse {
+
+        From {
+             transform:scale(1);
+             opacity: 1;
+         }
+         
+         To {
+             transform: scale(2);
+             opacity: .6;
+         }
+     }*/
+    
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <picture>
+        
+          <img src="images/image-product-desktop.jpg" alt="cartaz maior">
+        </picture>
+         <div class="texto">
+          <h2>Perfume</h2>
+          <h1>Gabrielle Essence Eau De Parfum</h1>
+          <p>
+            A floral, solar and voluptuous interpretation composed by Olivier Polge,
+            Perfumer-Creator for the House of CHANEL.
+          </p>
+          <h1 id="preço">
+            $149.99</h1>
+          
+            <p id="desconto">$169.99</p>
+          
+          <button class="btn">Add to Cart</button>
+        </div>
+      </main>
+    
+</body>
+</html>
